@@ -1,6 +1,6 @@
 {
   "name": "react-native-img-viewer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react native image viewer",
   "main": "built/index.js",
   "types": "built/index.d.ts",
@@ -29,9 +29,6 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "react-native-img-zoom": "^1.0.0"
-  },
-  "bundledDependencies": {
     "react-native-img-zoom": "^1.0.0"
   }
 }
