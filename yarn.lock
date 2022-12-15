@@ -4232,6 +4232,11 @@ react-native-gradle-plugin@^0.70.3:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
 
+react-native-img-zoom@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-img-zoom/-/react-native-img-zoom-1.0.0.tgz#47163345e0848efa34740852897dfd62d1f1eb48"
+  integrity sha512-wOlgQfnExKEvikrcWk1us7xDpHir0nX438KSKCLex/WD72iaeksDPkXyOLZVJaXPTmKR5xjlVyX1qeMFcJgoWg==
+
 react-native@^0.70.6:
   version "0.70.6"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.70.6.tgz#d692f8b51baffc28e1a8bc5190cdb779de937aa8"

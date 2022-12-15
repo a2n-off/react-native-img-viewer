@@ -1,5 +1,6 @@
-import Zoom from './zoom/zoom.component';
+import ImageViewer from './viewer/viewer.component'
+import { Props as ImageViewerPropsDefine } from './viewer/viewer.type'
 
-export default Zoom;
-export * from './zoom/zoom.type';
+export { ImageViewer, ImageViewerPropsDefine }
+export default ImageViewer
 
