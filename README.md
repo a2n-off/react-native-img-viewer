@@ -8,11 +8,11 @@ Fork of [react-native-image-viewer](https://github.com/ascoders/react-native-ima
 
 ## Installation
 
-dl via [NPM website](https://www.npmjs.com/)
+dl via [NPM website](https://www.npmjs.com/package/react-native-img-viewer)
 
 ## Configuration
 
-*todo*
+See [CONFIG.md](CONFIG.md)
 
 ## Demo
 
@@ -33,7 +33,7 @@ See the following file :
 
 ## Roadmap
 
-*nothing yet*
+- [ ] 
 
 ## Want to participate? Have a bug or a request feature?
 
@@ -42,7 +42,7 @@ Do not hesitate to open a pr or an issue. I reply when I can.
 ## Want to support my work?
 
 - [Give me a tips](https://ko-fi.com/a2n00)
-- [Give a star on github](https://github.com/bouteillerAlan/)
+- [Give a star on github](https://github.com/bouteillerAlan/react-native-img-viewer)
 - Or just participate to the developement :D
 
 ### Thanks !
