@@ -33,7 +33,8 @@ See the following file :
 
 ## Roadmap
 
-- [ ] 
+- [ ] add some picture & show case
+- [ ] translate comment
 
 ## Want to participate? Have a bug or a request feature?
 
