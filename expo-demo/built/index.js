@@ -1,20 +1,9 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const zoom_component_1 = require("./zoom/zoom.component");
-exports.default = zoom_component_1.default;
-__exportStar(require("./zoom/zoom.type"), exports);
+exports.ImageViewerPropsDefine = exports.ImageViewer = void 0;
+const viewer_component_1 = require("./viewer/viewer.component");
+exports.ImageViewer = viewer_component_1.default;
+const viewer_type_1 = require("./viewer/viewer.type");
+Object.defineProperty(exports, "ImageViewerPropsDefine", { enumerable: true, get: function () { return viewer_type_1.Props; } });
+exports.default = viewer_component_1.default;
 //# sourceMappingURL=index.js.map

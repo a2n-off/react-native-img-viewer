@@ -1,26 +1,20 @@
-import { Image, Dimensions, StyleSheet } from 'react-native';
+import { Modal, StyleSheet } from 'react-native';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
-import Zoom from './../built/index';
+import ImageViewer from './../built/index';
+
+const images = [{url: 'https://picsum.photos/200/300'}, {url: 'https://picsum.photos/500/500'}]
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-
-      <Zoom
-        cropWidth={Dimensions.get('window').width}
-        cropHeight={Dimensions.get('window').height}
-        imageWidth={300}
-        imageHeight={300}
-      >
-        <Image
-          style={{ width: 300, height: 300 }}
-          source={{ uri: 'https://picsum.photos/300/300' }}
-        />
-      </Zoom>
-
+      
+      <Modal visible={true} transparent={true}>
+        <ImageViewer imageUrls={images}/>
+      </Modal>
+      
     </View >
   );
 }
