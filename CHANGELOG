@@ -2,3 +2,7 @@
   - add license and utils files
   - create demo folder
   - update package and co
+
+## V1.0.5
+  - add the ability to get the size of an image protected with headers
+
