@@ -147,25 +147,37 @@ class ImageViewer extends React.Component {
             saveImageSize();
             return;
         }
-        react_native_1.Image.getSize(image.url, (width, height) => {
-            imageStatus.width = width;
-            imageStatus.height = height;
-            imageStatus.status = 'success';
-            saveImageSize();
-        }, () => {
-            try {
-                const data = react_native_1.Image.resolveAssetSource(image.props.source);
-                imageStatus.width = data.width;
-                imageStatus.height = data.height;
+        // Add ability to get size of images protected with headers
+        if (image.props.source.headers) {
+            react_native_1.Image.getSizeWithHeaders(image.url, image.props.source.headers, (width, height) => {
+                imageStatus.width = width;
+                imageStatus.height = height;
                 imageStatus.status = 'success';
                 saveImageSize();
-            }
-            catch (newError) {
-                // Give up..
+            }, () => {
                 imageStatus.status = 'fail';
                 saveImageSize();
-            }
-        });
+            });
+        }
+        else {
+            react_native_1.Image.getSize(image.url, (width, height) => {
+                imageStatus.width = width;
+                imageStatus.height = height;
+                imageStatus.status = 'success';
+                saveImageSize();
+            }, () => {
+                try {
+                    const data = react_native_1.Image.resolveAssetSource(image.props.source);
+                    imageStatus.width = data.width;
+                    imageStatus.height = data.height;
+                }
+                catch (newError) {
+                    // Give up..
+                    imageStatus.status = 'fail';
+                    saveImageSize();
+                }
+            });
+        }
     }
     /**
      * 预加载图片
