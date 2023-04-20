@@ -42,7 +42,7 @@ Do not hesitate to open a pr or an issue. I reply when I can.
 
 ## Want to support my work?
 
-- [Give me a tips](https://ko-fi.com/a2n00)
+- [Give me a tips](https://www.buymeacoffee.com/a2n.dev)
 - [Give a star on github](https://github.com/bouteillerAlan/react-native-img-viewer)
 - Or just participate to the developement :D
 
